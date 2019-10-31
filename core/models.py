@@ -35,6 +35,11 @@ class Item(models.Model):
             'slug': self.slug
         })
 
+    # def get_collections_absolute_url(self):
+    #     return reverse("core:collections", kwargs={
+    #         'slug': self.slug
+    #     })
+
     def get_add_to_cart_url(self):
         return reverse("core:add-to-cart", kwargs={
             'slug': self.slug

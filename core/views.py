@@ -14,6 +14,11 @@ class HomeView(ListView):
     template_name = "home.html"
 
 
+# class CollectionsView(ListView):
+#     model = Item
+#     template_name = "collections.html"
+
+
 class ItemDetailView(DetailView):
     model = Item
     template_name = "product.html"
